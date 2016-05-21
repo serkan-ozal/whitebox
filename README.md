@@ -7,6 +7,8 @@ Public version of JDK 8+ internal WhiteBox API
 
 In this public version, JDK's internal WhiteBox API is able to accessed and used easily without any extra effort through a simple API (`sun.hotspot.WhiteBoxProvider`).
 
+**NOTE:** Only supported on JDK8+.
+
 2. Installation
 ==============
 
