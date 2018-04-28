@@ -1,16 +1,16 @@
 # WhiteBox
+
 Public version of JDK 8+ internal WhiteBox API
 
-1. What is WhiteBox?
-==============
+## 1. What is WhiteBox?
+
 **WhiteBox** is one of the not so well-known tools of the HotSpot VM is its WhiteBox testing API. Introduced in Java 7 it has been significantly improved and extended in Java 8 and 9. It can be used to query or change HotSpot internals which are not otherwise exposed to Java-land. While its features make it an indispensable tool for writing good HotSpot regression tests, it can also be used for experiments or for the mere fun of peeking into the VM. (See https://wiki.openjdk.java.net/display/HotSpot/The+WhiteBox+testing+API for more details)
 
 In this public version, JDK's internal WhiteBox API is able to accessed and used easily without any extra effort through a simple API (`sun.hotspot.WhiteBoxProvider`).
 
 **NOTE:** Only supported on JDK8+.
 
-2. Installation
-==============
+## 2. Installation
 
 In your `pom.xml`, you must add repository and dependency for **Whitebox**. 
 
@@ -43,8 +43,8 @@ In your `pom.xml`, you must add repository and dependency for **Whitebox**.
 ...
 ```
 
-3. Usage
-==============
+## 3. Usage
+
 Just
 ``` java
 WhiteBox wb = WhiteBoxProvider.getWhiteBox();
